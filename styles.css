@@ -1,0 +1,151 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --lilac: hsl(245, 82%, 68%);
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  color: var(--dark-blue);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+p {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.background-pattern img {
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0px 22px 30px 0px rgba(31,47,86,0.22);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  width: 450px;
+  z-index: 1;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 3rem;
+  height: 360px;
+}
+
+.text-area p {
+  display: inline-block;
+  width: inherit;
+}
+
+.pricing {
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.pricing-text {
+  display: block;
+  text-align: left;
+  padding-left: 1.5rem;
+  width: 80%;
+}
+
+.pricing-text p {
+  width: 100px;
+}
+
+.change-anchor {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+
+.change-anchor:hover {
+  color: var(--lilac);
+}
+
+.payment-button {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: var(--bright-blue);
+  box-shadow: 0px 22px 30px 0px rgba(31,47,86,0.22);
+  color: var(--very-pale-blue);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 3.5rem;
+  border: none;
+  width: 100%;
+}
+
+.payment-button:hover {
+  background-color: var(--lilac);
+  cursor: pointer;
+}
+
+.cancel-anchor {
+  color: var(--desaturated-blue);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cancel-anchor:hover {
+  color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 500px){
+  .card {
+    width: 90%;
+  }
+
+  .pricing-text {
+    padding: 0 1rem;
+  }
+}
